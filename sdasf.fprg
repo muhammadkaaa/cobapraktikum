@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-07 09:21:34 PM"/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC1LNjBKRDJQOzIwMjQtMDMtMDc7MDk6MDc6MzggUE07MjgxMA=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC1LNjBKRDJQOzIwMjQtMDMtMDc7MDk6MjE6MzQgUE07MTsyOTEw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan bilangan pertama : &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;masukkan bilangan kedua : &quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;masukkan bilangan ketiga : &quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a &lt; b">
+                <then>
+                    <if expression="a&lt;c">
+                        <then>
+                            <output expression="&quot;bilangan terkecil = &quot; &amp; a" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="c &lt; b">
+                                <then>
+                                    <output expression="&quot;biangan terkecil = &quot; &amp; c" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;biangan terkecil = &quot; &amp; b" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b &lt; c">
+                        <then>
+                            <output expression="&quot;bilangan terkecil = &quot; &amp; b" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="c &lt; a">
+                                <then>
+                                    <output expression="&quot;bilangan terkecil = &quot; &amp; c" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;bilangan terkecil = &quot; &amp; a" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
